@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF00FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00FFFF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00FFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF00FF;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="300" fill="#0D1117" />
+  
+  <!-- Grid lines -->
+  <g stroke="#00FFFF" stroke-width="0.5" opacity="0.1">
+    <line x1="0" y1="50" x2="800" y2="50" />
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="150" x2="800" y2="150" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="250" x2="800" y2="250" />
+    <line x1="100" y1="0" x2="100" y2="300" />
+    <line x1="200" y1="0" x2="200" y2="300" />
+    <line x1="300" y1="0" x2="300" y2="300" />
+    <line x1="400" y1="0" x2="400" y2="300" />
+    <line x1="500" y1="0" x2="500" y2="300" />
+    <line x1="600" y1="0" x2="600" y2="300" />
+    <line x1="700" y1="0" x2="700" y2="300" />
+  </g>
+  
+  <!-- Timeline base -->
+  <line x1="100" y1="150" x2="700" y2="150" stroke="url(#grad1)" stroke-width="3" filter="url(#glow)" />
+  
+  <!-- Timeline nodes -->
+  <circle cx="150" cy="150" r="10" fill="#FF00FF" filter="url(#glow)" />
+  <circle cx="250" cy="150" r="10" fill="#00FFFF" filter="url(#glow)" />
+  <circle cx="350" cy="150" r="10" fill="#FF00FF" filter="url(#glow)" />
+  <circle cx="450" cy="150" r="10" fill="#00FFFF" filter="url(#glow)" />
+  <circle cx="550" cy="150" r="10" fill="#FF00FF" filter="url(#glow)" />
+  <circle cx="650" cy="150" r="10" fill="#00FFFF" filter="url(#glow)" />
+  
+  <!-- Timeline cards -->
+  <g>
+    <!-- Card 1 -->
+    <rect x="120" y="50" width="60" height="80" rx="5" ry="5" fill="rgba(255, 0, 255, 0.1)" stroke="#FF00FF" stroke-width="1" />
+    <line x1="130" y1="70" x2="170" y2="70" stroke="#FF00FF" stroke-width="1" />
+    <line x1="130" y1="80" x2="160" y2="80" stroke="#FF00FF" stroke-width="1" />
+    <line x1="130" y1="90" x2="165" y2="90" stroke="#FF00FF" stroke-width="1" />
+    <line x1="130" y1="100" x2="155" y2="100" stroke="#FF00FF" stroke-width="1" />
+    
+    <!-- Card 2 -->
+    <rect x="220" y="180" width="60" height="80" rx="5" ry="5" fill="rgba(0, 255, 255, 0.1)" stroke="#00FFFF" stroke-width="1" />
+    <line x1="230" y1="200" x2="270" y2="200" stroke="#00FFFF" stroke-width="1" />
+    <line x1="230" y1="210" x2="260" y2="210" stroke="#00FFFF" stroke-width="1" />
+    <line x1="230" y1="220" x2="265" y2="220" stroke="#00FFFF" stroke-width="1" />
+    <line x1="230" y1="230" x2="255" y2="230" stroke="#00FFFF" stroke-width="1" />
+    
+    <!-- Card 3 -->
+    <rect x="320" y="50" width="60" height="80" rx="5" ry="5" fill="rgba(255, 0, 255, 0.1)" stroke="#FF00FF" stroke-width="1" />
+    <line x1="330" y1="70" x2="370" y2="70" stroke="#FF00FF" stroke-width="1" />
+    <line x1="330" y1="80" x2="360" y2="80" stroke="#FF00FF" stroke-width="1" />
+    <line x1="330" y1="90" x2="365" y2="90" stroke="#FF00FF" stroke-width="1" />
+    <line x1="330" y1="100" x2="355" y2="100" stroke="#FF00FF" stroke-width="1" />
+    
+    <!-- Card 4 -->
+    <rect x="420" y="180" width="60" height="80" rx="5" ry="5" fill="rgba(0, 255, 255, 0.1)" stroke="#00FFFF" stroke-width="1" />
+    <line x1="430" y1="200" x2="470" y2="200" stroke="#00FFFF" stroke-width="1" />
+    <line x1="430" y1="210" x2="460" y2="210" stroke="#00FFFF" stroke-width="1" />
+    <line x1="430" y1="220" x2="465" y2="220" stroke="#00FFFF" stroke-width="1" />
+    <line x1="430" y1="230" x2="455" y2="230" stroke="#00FFFF" stroke-width="1" />
+    
+    <!-- Card 5 -->
+    <rect x="520" y="50" width="60" height="80" rx="5" ry="5" fill="rgba(255, 0, 255, 0.1)" stroke="#FF00FF" stroke-width="1" />
+    <line x1="530" y1="70" x2="570" y2="70" stroke="#FF00FF" stroke-width="1" />
+    <line x1="530" y1="80" x2="560" y2="80" stroke="#FF00FF" stroke-width="1" />
+    <line x1="530" y1="90" x2="565" y2="90" stroke="#FF00FF" stroke-width="1" />
+    <line x1="530" y1="100" x2="555" y2="100" stroke="#FF00FF" stroke-width="1" />
+    
+    <!-- Card 6 -->
+    <rect x="620" y="180" width="60" height="80" rx="5" ry="5" fill="rgba(0, 255, 255, 0.1)" stroke="#00FFFF" stroke-width="1" />
+    <line x1="630" y1="200" x2="670" y2="200" stroke="#00FFFF" stroke-width="1" />
+    <line x1="630" y1="210" x2="660" y2="210" stroke="#00FFFF" stroke-width="1" />
+    <line x1="630" y1="220" x2="665" y2="220" stroke="#00FFFF" stroke-width="1" />
+    <line x1="630" y1="230" x2="655" y2="230" stroke="#00FFFF" stroke-width="1" />
+  </g>
+  
+  <!-- Connection lines -->
+  <line x1="150" y1="150" x2="150" y2="130" stroke="#FF00FF" stroke-width="2" />
+  <line x1="250" y1="150" x2="250" y2="180" stroke="#00FFFF" stroke-width="2" />
+  <line x1="350" y1="150" x2="350" y2="130" stroke="#FF00FF" stroke-width="2" />
+  <line x1="450" y1="150" x2="450" y2="180" stroke="#00FFFF" stroke-width="2" />
+  <line x1="550" y1="150" x2="550" y2="130" stroke="#FF00FF" stroke-width="2" />
+  <line x1="650" y1="150" x2="650" y2="180" stroke="#00FFFF" stroke-width="2" />
+  
+  <!-- Time indicators -->
+  <text x="150" y="170" font-family="monospace" font-size="8" fill="#FF00FF" text-anchor="middle">2025-04-10</text>
+  <text x="250" y="140" font-family="monospace" font-size="8" fill="#00FFFF" text-anchor="middle">2025-04-11</text>
+  <text x="350" y="170" font-family="monospace" font-size="8" fill="#FF00FF" text-anchor="middle">2025-04-12</text>
+  <text x="450" y="140" font-family="monospace" font-size="8" fill="#00FFFF" text-anchor="middle">2025-04-13</text>
+  <text x="550" y="170" font-family="monospace" font-size="8" fill="#FF00FF" text-anchor="middle">2025-04-14</text>
+  <text x="650" y="140" font-family="monospace" font-size="8" fill="#00FFFF" text-anchor="middle">2025-04-15</text>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="16" fill="url(#grad2)" text-anchor="middle" filter="url(#glow)">MEDICAL HISTORY TIMELINE</text>
+</svg>
